@@ -19,6 +19,8 @@
 		C71584EF193B6E46004603F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71584D7193B6E46004603F0 /* UIKit.framework */; };
 		C71584F7193B6E46004603F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C71584F5193B6E46004603F0 /* InfoPlist.strings */; };
 		C71584F9193B6E46004603F0 /* RichStyleLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C71584F8193B6E46004603F0 /* RichStyleLabelTests.m */; };
+		C7158506193B6E9F004603F0 /* RichStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7158505193B6E9F004603F0 /* RichStyleLabel.m */; };
+		C7158509193B7810004603F0 /* ExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7158508193B7810004603F0 /* ExampleController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		C71584F4193B6E46004603F0 /* RichStyleLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RichStyleLabelTests-Info.plist"; sourceTree = "<group>"; };
 		C71584F6193B6E46004603F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C71584F8193B6E46004603F0 /* RichStyleLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichStyleLabelTests.m; sourceTree = "<group>"; };
+		C7158504193B6E9F004603F0 /* RichStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RichStyleLabel.h; path = RichStyleLabel/RichStyleLabel.h; sourceTree = "<group>"; };
+		C7158505193B6E9F004603F0 /* RichStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RichStyleLabel.m; path = RichStyleLabel/RichStyleLabel.m; sourceTree = "<group>"; };
+		C7158507193B7810004603F0 /* ExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleController.h; path = Example/ExampleController.h; sourceTree = "<group>"; };
+		C7158508193B7810004603F0 /* ExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleController.m; path = Example/ExampleController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 		C71584D9193B6E46004603F0 /* RichStyleLabel */ = {
 			isa = PBXGroup;
 			children = (
+				C7158503193B6E73004603F0 /* RichStyleLabel */,
+				C7158502193B6E6D004603F0 /* Example */,
 				C71584E2193B6E46004603F0 /* AppDelegate.h */,
 				C71584E3193B6E46004603F0 /* AppDelegate.m */,
 				C71584E5193B6E46004603F0 /* Images.xcassets */,
@@ -142,6 +150,24 @@
 				C71584F5193B6E46004603F0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7158502193B6E6D004603F0 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C7158507193B7810004603F0 /* ExampleController.h */,
+				C7158508193B7810004603F0 /* ExampleController.m */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		C7158503193B6E73004603F0 /* RichStyleLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C7158504193B6E9F004603F0 /* RichStyleLabel.h */,
+				C7158505193B6E9F004603F0 /* RichStyleLabel.m */,
+			);
+			name = RichStyleLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7158506193B6E9F004603F0 /* RichStyleLabel.m in Sources */,
+				C7158509193B7810004603F0 /* ExampleController.m in Sources */,
 				C71584E4193B6E46004603F0 /* AppDelegate.m in Sources */,
 				C71584E0193B6E46004603F0 /* main.m in Sources */,
 			);
