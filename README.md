@@ -10,7 +10,7 @@ It supports:
 - Apply user defined attributes to regular expression match results.
  
 
-![examle](ScreenShots/example.png)
+![examle](Screenshots/example.png)
 
 Installation
 -------------------------

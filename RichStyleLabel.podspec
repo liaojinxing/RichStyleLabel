@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/liaojinxing/RichStyleLabel.git", :tag => "0.0.1" }
   s.source_files  = 'RichStyleLabel/RichStyleLabel/*.{h,m}'
   s.requires_arc       = true
-  s.screenshots = [ "https://raw.githubusercontent.com/liaojinxing/RichStyleLabel/master/ScreenShots/example.png"]
+  s.screenshots = [ "https://raw.githubusercontent.com/liaojinxing/RichStyleLabel/master/Screenshots/example.png"]
 
 end
