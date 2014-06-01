@@ -59,4 +59,35 @@
   [self setAttributedText:attributedString];
 }
 
+- (void)setAttributedText:(NSString *)text withPatternAttributeDictionary:(NSDictionary *)dictionary
+{
+  NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+
+  [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+     if ([obj isKindOfClass:[NSDictionary class]]) {
+       NSRegularExpression *expression;
+       NSDictionary *attributesDict = (NSDictionary *)obj;
+
+       if ([key isKindOfClass:[NSRegularExpression class]]) {
+         expression = (NSRegularExpression *)key;
+       } else if ([key isKindOfClass:[NSString class]]) {
+         expression = [NSRegularExpression regularExpressionWithPattern:key
+                                                                options:0
+                                                                  error:nil];
+       }
+
+       [expression enumerateMatchesInString:text
+                                    options:0
+                                      range:NSMakeRange(0, [text length])
+                                 usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+          NSRange matchRange = [result range];
+          if (attributesDict) {
+            [attributedString addAttributes:attributesDict range:matchRange];
+          }
+        }];
+     }
+   }];
+  [self setAttributedText:attributedString];
+}
+
 @end

@@ -20,10 +20,10 @@
 {
   [super viewDidLoad];
   
-  RichStyleLabel *linkLabel = [[RichStyleLabel alloc] initWithFrame:CGRectMake(0, 100, 320, 100)];
-  linkLabel.numberOfLines = 0;
-  [linkLabel setLinkAttributedText:@"My home page is https://github.com/liaojinxing. "];
-  [self.view addSubview:linkLabel];
+  RichStyleLabel *label = [[RichStyleLabel alloc] initWithFrame:CGRectMake(0, 100, 320, 100)];
+  label.numberOfLines = 0;
+  [label setLinkAttributedText:@"My home page is https://github.com/liaojinxing. "];
+  [self.view addSubview:label];
   
   RichStyleLabel *regexLabel = [[RichStyleLabel alloc] initWithFrame:CGRectMake(0, 200, 320, 100)];
   regexLabel.numberOfLines = 0;

@@ -26,4 +26,6 @@
        withRegularPattern:(NSString *)pattern
                attributes:(NSDictionary *)attributesDict;
 
+- (void)setAttributedText:(NSString *)text withPatternAttributeDictionary:(NSDictionary *)dictionary;
+
 @end
