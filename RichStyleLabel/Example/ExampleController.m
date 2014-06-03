@@ -28,7 +28,7 @@
   RichStyleLabel *regexLabel = [[RichStyleLabel alloc] initWithFrame:CGRectMake(0, 200, 320, 100)];
   regexLabel.numberOfLines = 0;
   NSDictionary* redTextAttributes = @{ NSForegroundColorAttributeName : [UIColor redColor]};
-  [regexLabel setAttributedText:@"123Hello, world! " withRegularPattern:@"^[0-9]+" attributes:redTextAttributes];
+  [regexLabel setAttributedText:@"123 Hello, world 123! " withRegularPattern:@"[0-9]+" attributes:redTextAttributes];
   [self.view addSubview:regexLabel];
 }
 
